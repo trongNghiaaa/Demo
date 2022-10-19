@@ -1,0 +1,34 @@
+BUỔI 2: TOÁN TỬ
+
+1. Toán tử số học (+ - * / ** %)
+
+string + string = string =>  nối chuỗi
+number + string = string => phép cộng ép kiểu number thành string để thực hiện
+
+string (-, *, /) string => Nêu string là dạng ký tự = NaN (Not a number)
+                        => Nếu string dạng số = number
+
+
+2. Toán tử gán
+
+=           x = y  
++=          x += y      x = x + y
+-=          x -= y      x = x - y
+*=          x *= y      x = x * y
+/=          x /= y      x = x / y
+%=          x %= y      x = x % y
+**=         x **= y     x = x ** y
+
+3. Toán tử so sánh
+
+==  phép so sánh tương đối (sánh sánh giá trị)
+=== phép so sánh tuyệt đối  (so sánh giá trị và kiểu dữ liệu)
+
+
+4. Toán tử logic ! && ||
+
+! phủ định
+
+&& => Một trong các biểu thức trả về false thì cả biểu thức trả về false
+
+|| => Một trong các biểu thức trả về true thì cả biểu thức trả về true
