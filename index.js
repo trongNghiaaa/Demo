@@ -18,10 +18,23 @@
 //c = 1 + 4 + 2 - 3 + 2 - 11 = -9
 
 
-//Bài 3: var x = 5
-//a) var a = 5 + x++ + 10
-//b) var b = 5 + ++x +10
-//c) var c = 5 + x-- + 10
-//d) var d = 5 + --x +10
+//Bài 3:
+ //var x = 5
+ //var a = 5 + x++ + 10
+ //var b = 5 + ++x +10
+ //var c = 5 + x-- + 10
+ //var d = 5 + --x +10
 
-//a) a = 
+//a) a = 5 + 5 + 10 = 20 
+//b) b = 5 + 6 + 10 = 21
+//c) c = 5 + 5 + 10 = 20
+//d) d = 5 + 4 + 10 = 19
+
+
+//Bài 4: cho array = [1,6,8,7,6,9]
+ //Array trên có bao nhiêu phần tử
+ //Hãy in ra phần tử đầu tiên và phần tử cuối cùng trong array
+ //Hãy thêm số 5 vào cuối array
+ //Hãy thay đổi phần tử đầu và phần tử cuối thành số 10
+ 
+ 
