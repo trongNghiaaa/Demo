@@ -144,7 +144,108 @@
 // Tính tổng 3 phần tử cuối của mảng
 // Tìm xem trong array có phần tử nào là số 5 không?
 // Đếm số phần tử = 8 trong mảng
-let array = [1, 5, 7, 8, 9, 15, 8]
-for(i = array[0] ; i % 2 === 0 ; i++){
-    console.log(i)
-}
+// var array = [1, 5, 7, 8, 9, 15, 8];
+// var count = 0;
+//  for(i = 0 ; i < array.length ; i++){
+//     if()
+//     count += 1
+//  }
+//  console.log(count)
+// Tìm số chẫn trong arr và thêm vào arr2
+//  var arr =  [3,2,4,5,1,8,7,9]
+// var arr2 = []
+
+// for(i = 0 ; i < arr.length ; i++){
+//     if( arr[i] % 2 === 0 ){
+//         arr2[arr2.length] = arr[i] 
+//     } 
+// }
+// console.log(arr2)
+//Tính tích các số chẵn 
+// var arr = [3,2,4,1,8,7,1,10,1,2]
+
+// var tich = 1
+// for(let i = 0 ; i < arr.length ; i++){
+//     if( arr[i] % 2 === 0 ){
+//         tich *= arr[i]
+//     }
+// }
+// console.log(tich)
+// var salary = [
+//     {
+//       ten: "Anh",
+//       luong: 1000,
+//     },
+  
+//     {
+//       ten: "Duy",
+//       luong: 8000,
+//     },
+  
+//     {
+//       ten: "Thái",
+//       luong: 5000,
+//     },
+//   ];
+// //   var sum = 0
+// for(let i= 0; i < salary.length ; i++){
+//     sum += salary[i].luong
+// }
+// console.log(sum) 
+
+// Bài 0 : Sắp xếp to nhỏ dần
+// hoán vị
+// var arr = [1, 4, 5, 2, 7, 9, 4]
+// // 1,2,5,4,7,9,4
+// var count = 0
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//         if(arr[i] <  arr[j]) {
+//             var box = arr[i]
+//             arr[i] = arr[j]
+//             arr[j] = box
+//         }  
+//     }  
+// }
+// console.log(arr);
+
+// Bài 1: 
+//let array = [1,5,7,8,9,15,8];
+
+
+// let result = 0;
+// for(let i = array.length - 1 ; i > 3 ; i--){
+//         result += array[i]
+// }
+// let count8 = 0;
+// for(let i = 0 ; i < array.length ; i++){
+//     if(array[i] === 8 ){
+//         count8++;
+//     }
+// }
+
+// console.log(count8)    
+
+//Bài 4: Cho 1 số tự nhiên n. Viết chương trình kiểm tra n là số lẻ hay chẵn.
+//Nếu number là số chẵn , In ra "Even number" và "Done".Ngược lại, in "Done" ra màn hình.
+// let n = 2
+// let check = (n % 2 ===0) ? "Even number" : "Done"
+// console.log(check)
+
+//Bài 3: 
+var data = [3,2,4,'5',1,8,7,'9']
+//b) tạo ra array 2 chứa các phần tử có giá trị lẻ của data
+var arr2 = [];
+var arr3 = []
+
+// for (let i = 0; i < data.length; i++) {
+//     if(data[i] % 2 !== 0){
+//         arr2[arr2.length] = data[i]
+//     }
+// }
+// console.log(arr2)
+ //c) đưa vào arr3 phần tử data đảo ngược
+//  for(let i = data.length - 1 ; i >= 0 ; i-- ){
+//     arr3[arr3.length] = data[i]
+// }
+// console.log(arr3)
