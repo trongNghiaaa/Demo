@@ -112,12 +112,12 @@
 //     console.log(array5[array5.length - 1])// số nhỏ nhất
 
 // Bài 6: 
-var sanPham = [
-{ten :"Túi xách",gia:10000,soLuong:100},
-{ten :"dày",gia:15000,soLuong:30},
-{ten :"Dép",gia:12000,soLuong:30},
-{ten :"Ví",gia:101000,soLuong:20}
-];
+// var sanPham = [
+// {ten :"Túi xách",gia:10000,soLuong:100},
+// {ten :"dày",gia:15000,soLuong:30},
+// {ten :"Dép",gia:12000,soLuong:30},
+// {ten :"Ví",gia:101000,soLuong:20}
+// ];
 
 
 // Tính tổng số lượng các sản phẩm trên  . 
@@ -151,11 +151,11 @@ var sanPham = [
     //     } 
     // }
 //d)
-var tenSanpham = []
-for (let i = 0; i < sanPham.length; i++) {
-    if(){
-
-    } 
-}
- console.log(tenSanpham)
+//  var nhap = "Dép"
+//  for (let i = 0; i < sanPham.length; i++) {
+//      if(sanPham[i].ten === nhap){
+//          console.log(sanPham[i])
+//      }   
+//  }
+ 
 
