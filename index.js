@@ -233,10 +233,10 @@
 // console.log(check)
 
 //Bài 3: 
-var data = [3,2,4,'5',1,8,7,'9']
-//b) tạo ra array 2 chứa các phần tử có giá trị lẻ của data
-var arr2 = [];
-var arr3 = []
+// var data = [3,2,4,'5',1,8,7,'9']
+// //b) tạo ra array 2 chứa các phần tử có giá trị lẻ của data
+// var arr2 = [];
+// var arr3 = []
 
 // for (let i = 0; i < data.length; i++) {
 //     if(data[i] % 2 !== 0){
@@ -249,3 +249,46 @@ var arr3 = []
 //     arr3[arr3.length] = data[i]
 // }
 // console.log(arr3)
+
+
+//Hàm
+
+// var a = 2;
+// var b = 4;
+// function sum(x, y) {
+//    return x + y
+// }
+
+// console.log(sum(a, b))
+
+// function checkEven(a) {
+//         if(a % 2 === 0){
+//             return true;  
+//         }else{
+//             return false
+//         }
+// }
+// console.log(checkEven(4))   
+
+// var array1 = [1,2,3,4,5,6]
+//  function reverse(array) {
+//     var newArray = [];
+//     for (let i = array1.length - 1 ; i >= 0; i--) {
+//         newArray[newArray.length] = array1[i]           
+//     }
+//     return newArray
+//  }
+//  console.log(reverse(array1))    
+
+// Bài 5: Viết function có đầu vào là 1 string
+// 	function trả ra string mới sau khi đã loại bỏ khoảng trống thừa ở đầu và ở cuối string
+// 	ví dụ:
+// string = ‘     hello mọi người     ‘  => newString = ‘hello mọi người’
+
+//  var str = '     hello mọi người     '
+
+
+// Bài 1: Viết function có đầu vào là 1 array chứa các số
+// Function trả ra tổng các phần tử trong array
+// Function trả ra tích các phần tử trong array
+

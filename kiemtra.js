@@ -39,7 +39,7 @@
 // console.log(check)
 
 // Bài 4: 
-    var array4 = [5,2,5,"2",8,"0", 1,3,10,"1","7"]
+    // var array4 = [5,2,5,"2",8,"0", 1,3,10,"1","7"]
 // numberArr là mảng chứa các số, stringArr là mảng chứ các chuỗi
 // Tình tổng các phần tử trong numberArr
 // In ra các phần tử trong array4 trừ số 1
@@ -111,6 +111,14 @@
 //     }
 //     console.log(array5[array5.length - 1])// số nhỏ nhất
 
+// var max = array5[0]
+// for (let i = 0; i < array5.length; i++) {
+//      if(max < array5[i]){
+//         max = array5[i]
+//      }
+  
+// }
+// console.log(max)
 // Bài 6: 
 // var sanPham = [
 // {ten :"Túi xách",gia:10000,soLuong:100},
