@@ -291,4 +291,205 @@
 // Bài 1: Viết function có đầu vào là 1 array chứa các số
 // Function trả ra tổng các phần tử trong array
 // Function trả ra tích các phần tử trong array
+//let array = [5,9,10,4,6,2,4]
+// // let sum = 0;
+// // for (let i = 0; i < array.length; i++) {
+   
+// //      sum += array[i]
+// // }console.log(sum)
+//     sum = (arr) => {
+//         let tich = 1
+//         for(let i = 0; i < array.length ; i++) {
+//             tich *= array[i]
+//         }
+//         return tich
+//     }
+//     console.log(sum(array))
 
+
+// //2Bài 2: Viết function có đầu vào là 1 array chứa các số
+// Function trả ra số lớn nhất trong array 
+// Function trả ra số bé nhất trong array 
+
+// findMax = () => {
+//     let max = array[0]
+//     for (let i = 0; i < array.length; i++) {
+//         if(max < array[i])
+//         max = array[i]
+        
+//     }
+//     return max
+// }
+// console.log(findMax(array = [5,9,10,4,6,2,4]))
+//Bài 3: Viết function có đầu vào là 1 array
+//Function trả ra array mới với thứ tự ngược lại với array ban đầu
+
+// reverseArray = () => {
+//     let newArray = []
+//     for (let i = array.length - 1; i >= 0; i--) {
+//         newArray[newArray.length] = array[i]
+        
+//     }
+//     return newArray
+// }
+// console.log(reverseArray(array = [5,9,10,4,6,2,4]))
+
+// Bài 6: Viết function có đầu vào là 1 string
+// 	Thay thế tất cả dấu cách ‘ ‘ trong string bằng dấu ‘-‘ và trả ra string mới
+// 	VD 20 05 2015 => 20-05-2015
+
+// replace = (string) => {
+//     let newString = ''
+//     for (let i = 0; i < string.length; i++) {
+//         if(string[i] === ' '){
+//             string[i] = '-'
+//             newString[newString.length] = string[i]
+//         }
+//     }
+//     return newString
+// }
+// console.log(replace('20 05 2015'))
+
+// Bài 7: Viết function có đầu vào là 1 array
+// Function trả ra đoạn string chứa các giá trị bên trong array đầu vào
+
+
+
+// reverseString = (array) => {
+//     let newString = "";
+//     for (let i = 0; i < array.length; i++) {
+//         newString[newString.length] = array[i]  
+//     }
+//     return newString
+// }
+// console.log(reverseString([5,9,10,4,6,2,4]))
+
+
+// Bài 8: Viết function có đầu vào là 1 array chứa các số
+// 	Function trả ra số lớn nhất trong array  
+
+
+// maxNumber = (array) => {
+//     let max = array[0]
+//     for (let i = 0; i < array.length; i++) {
+//         if(array[i] > max){
+//             max = array[i]
+//         }  
+//     }
+//     return max
+// }
+// console.log(maxNumber([5,9,10,4,6,2,4]))
+
+// Bài 9: Viết function có đầu vào là 1 array
+// 	Function trả ra array mới với thứ tự ngược lại với array ban đầu
+
+
+// reverseArray = (array) => {
+//     let newArray = []
+//     for (let i = array.length - 1; i >= 0 ; i--) {
+//         newArray[newArray.length] = array[i]
+        
+//     }
+//     return newArray;
+// }
+// console.log(reverseArray([5,9,10,4,6,2,4]))
+
+// Bài 10: Viết function có đầu vào là số number và 1 array chứa số
+// 	Function trả ra số lần number lặp lại trong array
+
+
+
+// checkNumber = (number, array) => {
+//     let count = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         if(number === array[i]){
+//             count += 1
+//         }
+//     }
+//     return count;
+// }
+// console.log( checkNumber(4, [5,9,10,4,6,2,4] ))
+
+// Bài 12: 
+var shop = [
+	{id: 1, product:'Dày da', price: 259000, store: 100},
+	{id: 2, product: 'Dép lào', price: 129000, store: 230},
+	{id: 3, product: 'Giày cao gót', price: 749000, store: 130},
+	{id: 4, product: 'Dép tông', price: 499000, store: 240},
+    ] 
+// ( price là giá ; store : số lượng còn lại ) 
+// a ) Viết function tìm kiếm sản phẩm theo tên . Nếu không tìm thấy thì thì in ra “Không tìm thấy “ 
+// b ) Viết function tính tổng số sản phẩm có trong shop.
+// c ) Viết function tính tiền sản phẩm và cập nhật số lượng sản phẩm còn lại trong shop . 
+// đầu vào là chuỗi string tên sản phẩm , và số lượng mua . 
+// Nếu số sản phẩm còn lại trong shop  =< 0 thì in ra “ Shop đã hết SP bạn cần mua “ 
+//a)
+//  search = (Object) => {
+//     let ten = 'Dày da'
+//     for (let i = 0; i < shop.length; i++) {
+//         if(shop[i].product === ten) {
+//           return shop[i]
+//         }else{
+//             return "Không tìm thấy"  
+//         }
+            
+//     }
+// }
+// console.log(search(shop))
+//c)
+// checkShop = (string, number) => {
+//         for (let i = 0; i < shop.length; i++) {
+//             let ten = 'Dép lào'
+//             let conlai = shop[i].store - number
+//             if(shop[i].product === ten){
+//                 return (ten + conlai)
+//             }else if(conlai <= 0){
+//                 return "Shop đã hết SP bạn cần mua"
+//             }  
+//         }
+// }
+// console.log(checkShop('Dép lào', 10))
+
+// Bài 14:
+
+var sanPham = [
+  {
+        ten: "áo somi", gia: 100000,
+    doanhSo: 100
+  },
+  {
+    ten: "áo khoác", gia: 400000,
+    doanhSo : 50
+  },
+  {
+    ten: "áo phông", gia: 150000,
+    doanhSo : 200
+  },
+];
+ 
+// Hãy viết function để xử lý data trên 
+// a, function trả về tên hàng hóa có danh số cao nhất trong shop
+// b, function trả về tên hàng hóa có danh số thấp nhất trong shop
+// c, function trả về tổng doanh thu của shop, biết doanh thu = doanh so * gia ban
+
+//a) 
+// findMax = (array) => {
+//         let max = sanPham[0].doanhSo
+//         for (let i = 0; i < sanPham.length; i++) {
+//             if(max < sanPham[i].doanhSo) {
+//                 max = sanPham[i].doanhSo
+//                 return sanPham[i].ten
+//             }
+//         }     
+// } 
+// console.log(findMax(sanPham))
+//c)
+// sum = (array) => {
+//     let tong = 0;
+//     for (let i = 0; i < sanPham.length; i++) {
+//        tong += (sanPham[i].doanhSo * sanPham[i].gia)
+//     }return tong
+// }
+
+// console.log(sum(sanPham))
+//console.log(100000*100 + 400000*50 + 150000*200)
