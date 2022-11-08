@@ -1,291 +1,8 @@
-//Bài tập toán tử:
 
 
-//Bài 1: Thực hiện các phép toán sau:
-//(8 + "10" + "11" - "12" + "13" + "14" + 10);
-//("1" + "2" + 3 - 4  + 5 * "6" + "7" + "8" + "9" + 10 * 0)
-//console.log(8 + "10" + "11" - "12" + "13" + "14" + 10)
-//console.log("1" + "2" + 3 - 4  + 5 * "6" + "7" + "8" + "9" + 10 * 0) 
+//
 
-//Bài 2: 
-//var x = 2
-//var a = 8 + x++ + ++x - --x + x++ + 7; 
-//var b = 5 + ++x + ++x + --x - x-- - ++x  + 10;
-//var c = 1 + x-- + --x - ++x + --x - 11;
-
-//a = 8 + 2 + 4 - 3 + 3 + 7 = 21;
-//b = 5 + 3 + 4 + 3 + 3 - 3 - 4 + 10 = 21;
-//c = 1 + 4 + 2 - 3 + 2 - 11 = -9
-
-
-//Bài 3:
- //var x = 5
- //var a = 5 + x++ + 10
- //var b = 5 + ++x +10
- //var c = 5 + x-- + 10
- //var d = 5 + --x +10
-
-//a) a = 5 + 5 + 10 = 20 
-//b) b = 5 + 6 + 10 = 21
-//c) c = 5 + 5 + 10 = 20
-//d) d = 5 + 4 + 10 = 19
-
-
-//Bài 4: 
-//var khackHang = [1,6,8,7,6,9]
- //Array trên có bao nhiêu phần tử
- //Hãy in ra phần tử đầu tiên và phần tử cuối cùng trong khackHang
- //Hãy thêm số 5 vào cuối khackHang
- //Hãy thay đổi phần tử đầu và phần tử cuối thành số 10
- 
- //khackHang[khackHang.length] = 5
- //khackHang[0] = 10;
- //khackHang[khackHang.length - 1] = 10;
- //console.log(khackHang)
-
-
- //Bài 5: var a = 10; var b = a++; var c = ++b; var d = --c; 
-// a = 11
-//b = 10
-//c = 11
-//d = 10
-
-//Bài 6:Viết chương trình nhập vào giá trị cchuỗi message.
-//Nếu giá trị nhập vào là Employee thì hiển thị chuỗi Hello.
-//Còn lại nếu giá trị nhập vào là Director thì hiển thị chuỗi Greetings
-//Còn lại nếu giá trị nhập vào chuỗi rỗng thì hiển thị No login
-
-///var x = "Director"
-//var result = (x = "Employee") ? "Hello" : (x = "Director") ? "Greetings" : "No login"
-
-//console.log(x)
-
-//Bài 7: Viết chương trình nhập vào giá trị ca và b. Tính tổng a và b, nếu tổng nhỏ hơn 4, hiển thị chuỗi Below, ngược lại hiển thị Over. Lưu ý sử dụng toán tử ?
-//var a = 2;
-//var b = 2;
-//var result = ((a + b) <= 4 ) ? "Below" : "Over"
-
-//console.log(result)
-
-//Bài 9: ckhackHang = [3,5,4,9,8,1,10]
-//hãy tính tổng của phần tử đầu và phần tử cuối // 3 + 10
-//hãy thêm số 20 vào cuối khackHang trên và tính lại tổng của phần tử đầu và phần tử cuối  // 3 + 20
-
-
-// let arr = [3,5,4,9,8,1,10]
-//console.log(arr[0] + arr[arr.length - 1])
-
-//Bài tập toán tử nâng cao
-///Bài 1: 
-//var x = 8
-//var a = 1 + x++ + 9
-//var b = 7 + ++x + 3
-//ar c = 5 + x-- + 10
-//var d = 6 + --x + 11
-//a,b,c d có giá trị là bao nhiêu ?
-
- //a = 1 + 8 + 9 = 18
- //b = 7 + 10 + 3 = 20
- //c = 5 + 10 + 10 = 25
- //d = 6 + 8 + 11 = 25
- //x = 8 
-
-// Bài 2: Khai báo a ; b ;c  là  số đo 3 cạnh của  tam giác  ABC ..  
-///tính chu vi của tam giác   
-//Kiểm tra xem ABC có phải tam giác đều không . 
-//console.log để in ra kết quả . 
-//Trường hợp ABC là tam giác đều  . Tính diện tích của Tam giác ABC .
- 
-// let a = 3;
-// let b = 3; 
-// let c = 3;
-//  let check = (a == b && b == c && c == a) ? "Tam giác đều" : "Tam giác thường"
-//  console.log(check)
-// console.log(a + b + c)
-// console.log((a*(a**2-(a/2)**2))/2)
-
-// Ví dụ:
-
-// var x = 2;
-
-// var number = ((x % 3) == 0 && (x % 5) == 0 ) ? "chia hết c3, 5" 
-//             : ((x % 3) == 0 ) ? "chia hết c3" 
-//             : ((x % 5) == 0) ? "chia hết c5" 
-//             : "không chia hết"
-
-// console.log(number)
-
-// var arr2 = { a: 1, b: 2, c: 3, d: 4 }
-//      for (var key in arr2) {
-//          console.log(`${key} : ${arr2[key]}`)}
-
-
-//Bài 0 : Vòng lặp cơ bản 
-// let arr = [1, 4, 5, 2, 7, 9, 4]
-//     function number (a, b) {
-//         return a - b;
-//  }
- 
-//   console.log(arr.sort(number)) 
-
-//  let arr = [1, 4, 5, 2, 7, 9, 4];
-
-// arr.sort((a, b) => b - a);
-
-//  console.log(arr);
-
-
-// Bài 1: ckhackHang = [1,5,7,8,9,15,8]
-// in ra các số chẵn của mảng
-// in ra các số lẻ của mảng
-// in ra các số lớn hơn hoặc bằng 5 của mảng
-//  Cộng tổng các số chia hết c5 của mảng
-// Tìm ra tích 3 số đầu của mảng khackHang
-// Tính tổng 3 phần tử cuối của mảng
-// Tìm xem trong khackHang có phần tử nào là số 5 không?
-// Đếm số phần tử = 8 trong mảng
-// var khackHang = [1, 5, 7, 8, 9, 15, 8];
-// var count = 0;
-//  for(i = 0 ; i < khackHang.length ; i++){
-//     if()
-//     count += 1
-//  }
-//  console.log(count)
-// Tìm số chẫn trong arr và thêm vào arr2
-//  var arr =  [3,2,4,5,1,8,7,9]
-// var arr2 = []
-
-// for(i = 0 ; i < arr.length ; i++){
-//     if( arr[i] % 2 === 0 ){
-//         arr2[arr2.length] = arr[i] 
-//     } 
-// }
-// console.log(arr2)
-//Tính tích các số chẵn 
-// var arr = [3,2,4,1,8,7,1,10,1,2]
-
-// var tich = 1
-// for(let i = 0 ; i < arr.length ; i++){
-//     if( arr[i] % 2 === 0 ){
-//         tich *= arr[i]
-//     }
-// }
-// console.log(tich)
-// var salary = [
-//     {
-//       ten: "Anh",
-//       luong: 1000,
-//     },
-  
-//     {
-//       ten: "Duy",
-//       luong: 8000,
-//     },
-  
-//     {
-//       ten: "Thái",
-//       luong: 5000,
-//     },
-//   ];
-// //   var sum = 0
-// for(let i= 0; i < salary.length ; i++){
-//     sum += salary[i].luong
-// }
-// console.log(sum) 
-
-// Bài 0 : Sắp xếp to nhỏ dần
-// hoán vị
-// var arr = [1, 4, 5, 2, 7, 9, 4]
-// // 1,2,5,4,7,9,4
-// var count = 0
-// for (let i = 0; i < arr.length; i++) {
-//     for (let j = i + 1; j < arr.length; j++) {
-//         if(arr[i] <  arr[j]) {
-//             var box = arr[i]
-//             arr[i] = arr[j]
-//             arr[j] = box
-//         }  
-//     }  
-// }
-// console.log(arr);
-
-// Bài 1: 
-//let khackHang = [1,5,7,8,9,15,8];
-
-
-// let result = 0;
-// for(let i = khackHang.length - 1 ; i > 3 ; i--){
-//         result += khackHang[i]
-// }
-// let count8 = 0;
-// for(let i = 0 ; i < khackHang.length ; i++){
-//     if(khackHang[i] === 8 ){
-//         count8++;
-//     }
-// }
-
-// console.log(count8)    
-
-//Bài 4: C1 số tự nhiên n. Viết chương trình kiểm tra n là số lẻ hay chẵn.
-//Nếu number là số chẵn , In ra "Even number" và "Done".Ngược lại, in "Done" ra màn hình.
-// let n = 2
-// let check = (n % 2 ===0) ? "Even number" : "Done"
-// console.log(check)
-
-//Bài 3: 
-// var data = [3,2,4,'5',1,8,7,'9']
-// //b) tạo ra khackHang 2 chứa các phần tử có giá trị lẻ của data
-// var arr2 = [];
-// var arr3 = []
-
-// for (let i = 0; i < data.length; i++) {
-//     if(data[i] % 2 !== 0){
-//         arr2[arr2.length] = data[i]
-//     }
-// }
-// console.log(arr2)
- //c) đưa vào arr3 phần tử data đảo ngược
-//  for(let i = data.length - 1 ; i >= 0 ; i-- ){
-//     arr3[arr3.length] = data[i]
-// }
-// console.log(arr3)
-
-
-//Hàm
-
-// var a = 2;
-// var b = 4;
-// function sum(x, y) {
-//    return x + y
-// }
-
-// console.log(sum(a, b))
-
-// function checkEven(a) {
-//         if(a % 2 === 0){
-//             return true;  
-//         }else{
-//             return false
-//         }
-// }
-// console.log(checkEven(4))   
-
-// var khackHang1 = [1,2,3,4,5,6]
-//  function reverse(khackHang) {
-//     var newArray = [];
-//     for (let i = khackHang1.length - 1 ; i >= 0; i--) {
-//         newArray[newArray.length] = khackHang1[i]           
-//     }
-//     return newArray
-//  }
-//  console.log(reverse(khackHang1))    
-
-// Bài 5: Viết function có đầu vào là 1 string
-// 	function trả ra string mới sau khi đã loại bỏ khoảng trống thừa ở đầu và ở cuối string
-// 	ví dụ:
-// string = ‘     hello mọi người     ‘  => newString = ‘hello mọi người'
-
-//  var str = '     hello mọi người     '
+//
 
 
 // Bài 1: Viết function có đầu vào là 1 khackHang chứa các số
@@ -497,10 +214,10 @@
 
 
 // Bài 1: 
-var data = [
-    {username: 'thanhTung', password: 'tung1234'},
-    {username: 'tranganh', password: 'trang1234'},
-]
+// var data = [
+//     {username: 'thanhTung', password: 'tung1234'},
+//     {username: 'tranganh', password: 'trang1234'},
+// ]
 // Hãy viết function đăng ký tài khoản
 // function có đầu vào là username và password
 // nếu username khác rỗng, password >= 8 ký tự thì thêm vào data
@@ -592,8 +309,8 @@ var dichVu = [
 ]
 
 var hangHoa = [
-	{id: 1, product:'P1 ', price: 259000, tonKho: 100},	
-	{id: 2, product: 'P1', price: 129000, tonKho: 230},
+	{id: 1, product:'P1 ', price: 259000, store: 100},	
+	{id: 2, product: 'P1', price: 129000, store: 230},
 	{id: 3, product: 'O2', price: 749000, store: 130},
 	{id: 4, product: 'O6', price: 499000, store: 240},
 ] 
@@ -601,8 +318,10 @@ var hangHoa = [
 // Viết function in ra danh sách khách hàng theo dịch vụ mà từng người đăng ký .
 // Viết function in ra danh sách các khách hàng nam .
 // Viết function in ra danh sách các khách hàng nữ .
-// Viết function tính giá sản phẩm theo từng khách hàng .  Nếu số lượng người dùng cần mua quá số lượng còn trong kthì in ra “ Trong kkhông đủ sản phẩm , vui lòng mua ít hơn “ . 
-// Ví dụ :  Nguyễn Văn A  , đăng ký dịch vụ A ( khuyến mãi = 20%) và mua sản phẩm O2 với số lượng 10 cái . thì giá là 749000*10 -( 749000*10 )*0.2.
+// Viết function tính giá sản phẩm theo từng khách hàng .  Nếu số lượng người dùng cần mua quá số lượng 
+//còn trong kho in ra “ Trong kho không đủ sản phẩm , vui lòng mua ít hơn “ . 
+// Ví dụ :  Nguyễn Văn A  , đăng ký dịch vụ A ( khuyến mãi = 20%) và mua sản phẩm O2 với 
+//số lượng 10 cái . thì giá là 749000*10 -( 749000*10 )*0.2.
 
 //a.
 // function registerVip(diemTichLuy) {
@@ -615,20 +334,105 @@ var hangHoa = [
 //     return ten
 // }
 // console.log(registerVip(150))
+//b,
+//  let check = (dichvu) => {
+//     let ten = []
+//     for (let i = 0; i < khachHang.length; i++) {
+//         if(khachHang[i].dichVuDangKy === dichvu){
+//                 ten[ten.length] = khachHang[i]
+//             } 
+//     }return ten 
+//  }
+
+// console.log(check('A'))
+
+//c,
+//  let checkSex = (sex) => {
+//         let ten = []
+//         for (let i = 0; i < khachHang.length; i++) {
+//             if(khachHang[i].gioiTinh === sex) {
+//                 ten[ten.length] = khachHang[i]
+//             }  
+//         }
+//         return ten
+//  }
+// console.log(checkSex('nam'))
+
+//d,
+// let tinhTien = (name, product, cost) => {
+//     let dichvu =""
+//     let giaKuyenMai = 0
+//     let giatien = 0
+//     for (let i = 0; i < khachHang.length; i++) {
+//         if(name === khachHang[i].ten){
+//             dichvu = khachHang[i].dichVuDangKy
+//         }
+//         for (let j = 0; j < dichVu.length; j++) {
+//             if(dichvu === dichVu[i].ten){
+//                 giaKuyenMai = dichVu[i].khuyenMai
+//             }        
+//         }
+//     for (let k = 0; k < hangHoa.length; k++) {
+//         if(product === hangHoa[k].product){
+//             if(number < hangHoa[k].store){
+//                 giatien = (number*hangHoa[k].price) - (number*hangHoa[k].price - giaKuyenMai)
+//             }else{
+//                 return "Không đủ"
+//             }
+//         }
+//     }
+        
+//     }
+//     return giatien
+// }
+
+//e,
+// let tinhTien = (name,product,number,idea) => {
+//     let dichvu = ''
+//     let giakhuyenmai = 0
+//     let giatien = 0
+//     let diemtichluy = 0
+//     for (let i = 0; i < khachHang.length; i++) {
+//         if(name === khachHang[i].ten){
+//             dichvu = khachHang[i].dichVuDangKy
+//             diemtichluy = khachHang[i].diemTichLuy
+//         }
+//         console.log(dichvu)
+//         for (let j = 0; j < dichVu.length; j++) {
+//             if( dichvu === dichVu[j].ten){
+//                 giakhuyenmai = dichVu[j].khuyenMai
+//             } 
+//         }  
+//     }console.log(dichvu)
+//     console.log(giakhuyenmai)
+//     for (let k = 0; k < hangHoa.length; k++) {
+//         if(product === hangHoa[k].product){
+//             if(idea === "yes") {
+//                 giatien = (number*hangHoa[k].price) - (number*hangHoa[k].price * giakhuyenmai) - diemtichluy*10000   
+//             }else if(idea === "no"){
+//                 giatien = (number*hangHoa[k].price) - (number*hangHoa[k].price * giakhuyenmai)
+//             }
+//         }    
+//     }
+//     console.log(dichvu)
+// return giatien
+// }
+// console.log(tinhTien('nguyen tien dat','O2', 10,"no"))
+
 
 // Bài 2:
-var orderData = [
+// var orderData = [
  
-   { id: 1,listProduct: [ {idSP: 1, buy: 2}, {idSP: 2,buy: 1}]}, 
-    { id: 2, listProduct: [ {idSP: 1, buy: 1}, {idSP: 2, buy: 1}]},
-]
+//    { id: 1,listProduct: [ {idSP: 1, buy: 2}, {idSP: 2,buy: 1}]}, 
+//     { id: 2, listProduct: [ {idSP: 1, buy: 1}, {idSP: 2, buy: 1}]},
+// ]
 
-var productData = [
-    {idSP: 1, price: 500000, store: 100}, 
-    {idSP: 2, price: 300000, store: 200},
-    {idSP: 3, price: 200000, store: 300},
-]
-var income = 0
+// var productData = [
+//     {idSP: 1, price: 500000, store: 100}, 
+//     {idSP: 2, price: 300000, store: 200},
+//     {idSP: 3, price: 200000, store: 300},
+// ]
+// var income = 0
 
 
 //  hãy update lại store của shop
@@ -760,9 +564,38 @@ var income = 0
 // console.log(result)
 //c)
 // Bài 7: 
-var array1 = [1,5,2,6,2,8,9,4,6,2,3,5,7,9,3,2,75,6,4,3,2,4,12];
-var array2 = [4,6,3,8,5,7,4,1,2,9,6,5,3,1,5,2,7,6,8,6,3,2,1,5];
-var array3 = [2,5,1,6,3,8,4,10,5,3,1,6,5,2,6,4,8,9,2,1,5,8,7,12];
+//var array1 = [1,5,2,6,2,8,9,4,6,2,3,5,7,9,3,2,75,6,4,3,2,4,12];
+//var array2 = [4,6,3,8,5,7,4,1,2,9,6,5,3,1,5,2,7,6,8,6,3,2,1,5];
+//var array3 = [2,5,1,6,3,8,4,10,5,3,1,6,5,2,6,4,8,9,2,1,5,8,7,12];
  //Viết function Tính tổng, tích, giá trị trung bình cộng của cả 3 array
 // Viết function Tính tích của các phần tử từ đầu đến vị trí số 2 xuất hiện lần thứ 3 của array1 với tích phần tử từ đầu đến vị trí có giá trị là 5 xuất hiện lần 2 của array2
 // Viết function Tính tích, tính tổng của các phần tử từ vị trí số 2 xuất hiện lần đầu đến vị trí số 2 xuất hiện lần thứ 4 của cả 3 array . 
+//Bài 9 :
+// var tenKhach = [
+//     {ten: 'nguyen the su', gioBay: '11:30', diemDen: 'Nha Trang', veKhoang: 'S'}, 
+//     {ten: 'ngo van khoai', gioBay: '9:30', diemDen: 'Ha Noi', veKhoang: 'A'}, 
+//     {ten: 'tau dau hu', gioBay: '10:15', diemDen: 'Hai Phong', veKhoang: 'B'}, 
+//     {ten: 'chuyen lua gat', gioBay: '13:30', diemDen: 'Nha Trang', veKhoang: 'C'}, 
+//     {ten: 'le quan quy', gioBay: '14:30', diemDen: 'TP.HCM', veKhoang: 'A'}, 
+//     {ten: 'hoang hao hoa', gioBay: '11:30', diemDen: 'Nam Dinh', veKhoang: 'B'}, 
+// ]
+
+// var choNgoi = [
+//     {ten: 'Ghe hang king', mave:'S'},
+//     {ten: 'Ghe hang thuong gia', mave:'A'},
+//     {ten: 'Ghe hang pho thong', mave:'B'},
+//     {ten: 'Ghe hang pho cap', mave:'C'},
+// ]
+
+// var chuyenBay = [
+//     { gioBay: '11:30', diemDen:'Nha Trang', maMayBay: 'AB123' },
+//     { gioBay: '13:30', diemDen:'Nha Trang', maMayBay: 'GD178' },
+//     { gioBay: '11:30', diemDen:'Nam Dinh', maMayBay: 'BC452' },
+//     { gioBay: '14:30', diemDen:'TP.HCM', maMayBay: 'GD73' },
+//     { gioBay: '10:15', diemDen:'Hai Phong', maMayBay: 'FT351' },
+// ]
+
+// Viết function in ra thông tin của những người cùng giờ bay và cho thêm dữ kiện họ ngồi ghế gì, trên những chuyến bay nào .
+// Hãy in ra thông tin chi tiết của người bay vào 9h30 và có cả dữ liệu họ ngồi ghế ghì, trên những chuyến bay nào . => a	
+// Viết function tìm theo tên hành khách và in ra chuyến bay của họ ..
+//a,
