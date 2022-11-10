@@ -101,7 +101,7 @@ var data2 = [1,1,3,4,4,5,6,7,9]
 // console.log(newData)
 
 // Bài 7: cho  
-       let array = [1,5,7,8,9,15] //sử dụng map hoặc filter
+       //let array = [1,5,7,8,9,15] //sử dụng map hoặc filter
 //  in ra các số chẵn trong mảng
      
        
@@ -125,15 +125,15 @@ var data2 = [1,1,3,4,4,5,6,7,9]
 // * dùng vòng for tăng kết quả của các phần tử array lên 2 lần, kết quả sẽ là mảng sau [2,10,14,16,18,30]
 
 
-var  hoaQua = [
-	{ten:"Xoài",sx:"China",sl:"100"},
-	{ten:"Xoài",sx:"VietNam",sl:"130"},
-	{ten:"Xoài",sx:"ThaiLan",sl:"100"},
-	{ten:"Cam",sx:"China",sl:"200"},
-{ten:"Cam",sx:"ThaiLan",sl:"150"},
-{ten:"Nho",sx:"VietNam",sl:"120"},
-{ten:"Xoài",sx:"ThaiLan",sl:"100"},
-]
+// var  hoaQua = [
+// 	{ten:"Xoài",sx:"China",sl:"100"},
+// 	{ten:"Xoài",sx:"VietNam",sl:"130"},
+// 	{ten:"Xoài",sx:"ThaiLan",sl:"100"},
+// 	{ten:"Cam",sx:"China",sl:"200"},
+// {ten:"Cam",sx:"ThaiLan",sl:"150"},
+// {ten:"Nho",sx:"VietNam",sl:"120"},
+// {ten:"Xoài",sx:"ThaiLan",sl:"100"},
+// ]
 // Áp dụng filter lọc các trái cây có nơi sản xuất tại VietNam . 
 // Áp dụng  filter lọc các trái cây có số lượng (sl) > = 150 . 
 // Viết function lọc sản phẩm hoa quả  theo tên  .  
@@ -241,3 +241,128 @@ var  hoaQua = [
 // for(let x in output){
 //     console.log(`số ${x} xuất hiện${output[x].length}`);
 // }
+
+// Bài 14: Cho 
+//var arr = [1,4,2,5,7,2,8,'23',3,8,6,'a',3,9,'d',"c",11,'f','r',35,'g','b',42,'k','j','h','11'] 
+// Hãy chia arr trên thành 2 array nhỏ theo kiểu dữ liệu khác nhau và sắp xếp theo thứ tự tăng dần .
+// let arr1 = []
+// let arr2 = []
+// arr.forEach((value)=>{
+//         if(typeof value === "string"){
+//                 arr1.push(value)
+//         }else if(typeof value === "number"){
+//                 arr2.push(value)
+//         }
+// })
+// console.log(arr1)
+// console.log(arr2)
+// Hãy tính tổng của các giá trị number và các string number trong arr
+// let total = 0;
+// let newArr = arr.filter((value)=>{
+//         return value*1
+// }).map((value)=>{
+//         return value*1
+// })
+//console.log(sum)
+// newArr.forEach((value)=>{
+//         total += value
+// })
+// console.log(total)
+// Hãy sắp xếp arr trên theo thứ tự tăng dần.
+//         let check = newArr.sort((a,b)=>{
+//                 return a - b
+//         })
+// console.log(check)
+// Hãy lấy các giá trị có thuộc tính là number từ arr và kiểm tra xem các số đó có phải là số nguyên tố hay không . 
+//Bài 3: 
+// var hoaQua = [
+//         { ten: 'Xoài', sx: 'China', sl: '100' },
+//         { ten: 'Xoài', sx: 'VietNam', sl: '130' },
+//         { ten: 'Xoài', sx: 'ThaiLan', sl: '100' },
+//         { ten: 'Cam', sx: 'China', sl: '200' },
+//         { ten: 'Cam', sx: 'ThaiLan', sl: '150' },
+//         { ten: 'Nho', sx: 'VietNam', sl: '120' },
+//         { ten: 'Xoài', sx: 'ThaiLan', sl: '100' }
+//     ];
+// //     a. In ra vị trí "xoài" ở mảng trên.
+// //     b. Sắp xếp các hóa quả theo số lượng.
+// let newArr = hoaQua.sort((a, b)=>{
+//         return a.sl - b.sl
+// })
+//console.log(newArr)
+
+//     c. Từ câu b, lấy ra vị trí của hoa của có số lượng lớn nhất
+//     d. Tìm vị trí của hoa quả có số lượng 400
+
+//Bài 4:
+var hocSinh=[
+{ten: 'huy', khoi:'A', diem: {toan: 7, van: 5, anh:5}},
+{ten: 'lam', khoi:'B', diem: {toan: 7, van: 7, anh:5}},
+{ten: 'tung', khoi:'C', diem: {toan: 7, van: 4, anh:7}},
+]
+
+var khoiThi = [
+{khoi: 'A', heSo:{toan:2, van:1, anh:1}, diemSan:20},
+{khoi: 'B', heSo:{toan:1, van:1, anh:2}, diemSan:22},
+{khoi: 'C', heSo:{toan:1, van:2, anh:1}, diemSan:20},
+]
+
+// hãy tính điểm thi của từng học sinh biết tổng điểm = điểm thi * hệ số
+// let tongDiem = 0
+// let tenHocSinh = 'tung'
+// hocSinh.forEach((value)=>{
+//         let tenKhoi = ""
+//         let diemThi = {}
+//         if(tenHocSinh === value.ten){
+//                 tenKhoi = value.khoi
+//                 diemThi = value.diem
+//         }
+//         khoiThi.forEach((value2)=>{
+//                 if(tenKhoi === value2.khoi){
+//                         tongDiem = diemThi.toan*value2.heSo.toan+diemThi.van*value2.heSo.van+diemThi.anh*value2.heSo.anh
+//                 }
+//         })
+// })
+// let ketQua =""
+// khoiThi.forEach((value3)=>{    
+//         if(tongDiem >= value3.diemSan){
+//                 ketQua = "đỗ"              
+//         }else {
+//                 ketQua ="trượt"
+//         }
+// })
+// console.log(tongDiem)
+// console.log(`Học sinh ${tenHocSinh} đã thi ${ketQua}`)
+// // console.log(tongDiem)
+
+
+// hệ số sẽ thay đổi theo kh ối thi và môn thi
+// hoc sinh thi đỗ nếu điểm thi >= điểm sàn của khối tương ứng
+// hãy cho biết ai thi đỗ, ai thi trượt
+// Bài 7:
+// cho array persons 
+[{
+	name: "Trung",
+	class: "Nodemy01",
+	dateJoin: "052-0-2020",
+age: 20
+}, {
+	name: "Phong",
+class: "Nodemy01",
+dateJoin: "06-01-2020",
+age: 19
+}, {
+	name: "Nam",
+class: "Nodemy02",
+dateJoin: "25-01-2020",
+age: 20
+}]
+
+// dùng .sort  để sắp xếp mảng object có tuổi tăng dần
+// dùng .sort để sắp xếp mảng theo ngày tham gia của học viên
+// dùng .filter để tìm ra những học viện tham gia trước tháng 2
+// dùng .map để tạo mảng mới, viết hoa toàn bộ Tên học viện : (Trung => TRUNG) 
+// 	gợi ý : dùng toUppercase để viết hoa
+
+
+    

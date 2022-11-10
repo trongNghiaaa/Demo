@@ -40,43 +40,43 @@
 // }).join(" ")
 // console.log(Name)
 
-var data = [
-    { name: "nguyen van thai", age: 11 },
-    { name: "hoang manh kien", age: 10 },
-    { name: "pham thuy linh", age: 12 },
-    { name: " nguyen ngoc tung", age: 11 },
-    { name: "vu quang thinh", age: 17 },
-    { name: "nguyen minh thuan", age: 13 },
-    { name: "nguyen van thai", age: 15 },
-    { name: "hoang manh Kien", age: 10 },
-    { name: "Pham thuy linh", age: 12 },
-    { name: "vu ngoc tung", age: 11 },
-    { name: "le quang thinh", age: 13 },
-    { name: "nguyen minh thuan", age: 13 },
-    { name: "nguyen van thai", age: 15 },
-    { name: "hoang manh Kien", age: 10 },
-    { name: "hoang thuy linh", age: 12 },
-    { name: "nguyen ngoc tung", age: 11 },
-    { name: "le quang thinh", age: 16 },
-    { name: "chu minh thuan", age: 13 },
-  ];
+// var data = [
+//     { name: "nguyen van thai", age: 11 },
+//     { name: "hoang manh kien", age: 10 },
+//     { name: "pham thuy linh", age: 12 },
+//     { name: " nguyen ngoc tung", age: 11 },
+//     { name: "vu quang thinh", age: 17 },
+//     { name: "nguyen minh thuan", age: 13 },
+//     { name: "nguyen van thai", age: 15 },
+//     { name: "hoang manh Kien", age: 10 },
+//     { name: "Pham thuy linh", age: 12 },
+//     { name: "vu ngoc tung", age: 11 },
+//     { name: "le quang thinh", age: 13 },
+//     { name: "nguyen minh thuan", age: 13 },
+//     { name: "nguyen van thai", age: 15 },
+//     { name: "hoang manh Kien", age: 10 },
+//     { name: "hoang thuy linh", age: 12 },
+//     { name: "nguyen ngoc tung", age: 11 },
+//     { name: "le quang thinh", age: 16 },
+//     { name: "chu minh thuan", age: 13 },
+//   ];
   // Viết hoa các chữ cái đầu
 //   let newData = []
 //   data.forEach((value)=>{
 //     newData.push(value.name)
 //   })
 //console.log(newData)
-let newArr = data.map((value)=>{
-    let newName = ""
-    newName = value.name.split(" ")
-    value.name = newName
-    let name = value.name.map((value2)=>{
-       value2 = value2[0].toUpperCase() + value2.slice(1, value2.length)
-        return value2
-    })
+// let newArr = data.map((value)=>{
+//     let newName = ""
+//     newName = value.name.split(" ")
+//     value.name = newName
+//     let ten = value.name.map((value2)=>{
+//        value2 = value2[0].toUpperCase() + value2.slice(1, value2.length)
+//         return value2
+//     })
 
-    value.name = name.join(" ")
-    return value
-})
+//     value.name = ten.join(" ")
+//     return value
+// })
 
-console.log(newArr)
+// console.log(newArr)
