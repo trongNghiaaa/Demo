@@ -78,19 +78,19 @@ var arr2 = { a: 1, b: 2, c: 3, d: 4 }
 
 // Bài 0 : Sắp xếp to nhỏ dần
 // hoán vị
-// var arr = [1, 4, 5, 2, 7, 9, 4]
-// // 1,2,5,4,7,9,4
-// var count = 0
-// for (let i = 0; i < arr.length; i++) {
-//     for (let j = i + 1; j < arr.length; j++) {
-//         if(arr[i] <  arr[j]) {
-//             var box = arr[i]
-//             arr[i] = arr[j]
-//             arr[j] = box
-//         }  
-//     }  
-// }
-// console.log(arr);
+var arr = [1, 4, 5, 2, 7, 9, 4]
+// 1,2,5,4,7,9,4
+var count = 0
+for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+        if(arr[i] <  arr[j]) {
+            var box = arr[i]
+            arr[i] = arr[j]
+            arr[j] = box
+        }  
+    }  
+}
+console.log(arr);
 
 // Bài 1: 
 //let khackHang = [1,5,7,8,9,15,8];

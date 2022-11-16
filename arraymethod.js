@@ -308,61 +308,152 @@ var khoiThi = [
 ]
 
 // hãy tính điểm thi của từng học sinh biết tổng điểm = điểm thi * hệ số
-// let tongDiem = 0
-// let tenHocSinh = 'tung'
-// hocSinh.forEach((value)=>{
-//         let tenKhoi = ""
-//         let diemThi = {}
-//         if(tenHocSinh === value.ten){
-//                 tenKhoi = value.khoi
-//                 diemThi = value.diem
-//         }
-//         khoiThi.forEach((value2)=>{
-//                 if(tenKhoi === value2.khoi){
-//                         tongDiem = diemThi.toan*value2.heSo.toan+diemThi.van*value2.heSo.van+diemThi.anh*value2.heSo.anh
-//                 }
-//         })
-// })
-// let ketQua =""
-// khoiThi.forEach((value3)=>{    
-//         if(tongDiem >= value3.diemSan){
-//                 ketQua = "đỗ"              
-//         }else {
-//                 ketQua ="trượt"
-//         }
-// })
+let tongDiem = 0
+let tenHocSinh = 'tung'
+hocSinh.forEach((value)=>{
+        let tenKhoi = ""
+        let diemThi = {}
+        if(tenHocSinh === value.ten){
+                tenKhoi = value.khoi
+                diemThi = value.diem
+        }
+        khoiThi.forEach((value2)=>{
+                if(tenKhoi === value2.khoi){
+                        tongDiem = diemThi.toan*value2.heSo.toan+diemThi.van*value2.heSo.van+diemThi.anh*value2.heSo.anh
+                }
+        })
+})
+let ketQua =""
+khoiThi.forEach((value3)=>{    
+        if(tongDiem >= value3.diemSan){
+                ketQua = "đỗ"              
+        }else {
+                ketQua ="trượt"
+        }
+})
+console.log(tongDiem)
+console.log(`Học sinh ${tenHocSinh} đã thi ${ketQua}`)
 // console.log(tongDiem)
-// console.log(`Học sinh ${tenHocSinh} đã thi ${ketQua}`)
-// // console.log(tongDiem)
 
 
 // hệ số sẽ thay đổi theo kh ối thi và môn thi
 // hoc sinh thi đỗ nếu điểm thi >= điểm sàn của khối tương ứng
 // hãy cho biết ai thi đỗ, ai thi trượt
 // Bài 7:
-// cho array persons 
-[{
-	name: "Trung",
-	class: "Nodemy01",
-	dateJoin: "052-0-2020",
-age: 20
-}, {
-	name: "Phong",
-class: "Nodemy01",
-dateJoin: "06-01-2020",
-age: 19
-}, {
-	name: "Nam",
-class: "Nodemy02",
-dateJoin: "25-01-2020",
-age: 20
-}]
+// cho 
+let  persons = 
+[
+ {      name: "trung",  class: "Nodemy01",  dateJoin: "05-02-2020",age: 20      }, 
+ {       name: "phong",  class: "Nodemy01",  dateJoin: "06-01-2020",  age: 19   }, 
+ {       name: "nam",  class: "Nodemy02",  dateJoin: "25-01-2020",  age: 20     }
+]
 
 // dùng .sort  để sắp xếp mảng object có tuổi tăng dần
+// let tangDan = persons.sort((a,b)=>{
+//         return a.age - b.age
+// })
+// console.log(tangDan)
+
 // dùng .sort để sắp xếp mảng theo ngày tham gia của học viên
-// dùng .filter để tìm ra những học viện tham gia trước tháng 2
+        // Turn your strings into dates, and then subtract them
+        //to get a value that is either negative, positive, or zero.
+// let newArr = persons.sort(function(a,b){
+//         return new Date(a.dateJoin) - new Date(b.dateJoin);
+//       });
+
+// let newArr = persons.sort(function(a, b) {
+//         a = new Date(a.dateJoin);
+//         b = new Date(b.dateJoin);
+//         return a === b ? 0 : a > b ? -1 : 1;
+//     });
+//console.log(newArr)
+// let newArr = persons.map((value)=>{
+//         // let newDate = []
+//         let newDate = value.dateJoin.split("-").reverse().join("/")
+//         value.dateJoin = newDate      
+//         return (value)   
+// }).sort((a,b)=>{
+//         //  a = new Date (a.dateJoin)
+//         //  b = new Date (b.dateJoin)
+//         // return a === b ? 0 : a > b ? 1 : -1 
+//         return new Date(a.dateJoin) - new Date(b.dateJoin);
+// })  
+// console.log(newArr)
+
+// dùng .filter để tìm ra những học viên tham gia trước tháng 2
 // dùng .map để tạo mảng mới, viết hoa toàn bộ Tên học viện : (Trung => TRUNG) 
 // 	gợi ý : dùng toUppercase để viết hoa
 
+//     let newArr = persons.map((value)=>{
+//         let newName = ''
+//         newName = value.name.split(" ")
+//         value.name = newName
+//         let ten = value.name.map((value2)=>{
+//                 value2 = value2[0].toUpperCase() + value2.slice(1, value2.length)
+//                 return value2
+//         })
+//         value.name = ten.join("")
+//         return value
+//     })
+//     console.log(newArr)
 
-    
+
+
+//Bài 8
+// var khanhHang = [
+//     {ten: 'huy', phanLoai: 'A', giohang:{soLuong: 12, trongLuong: 12}},
+//     {ten: 'lam', phanLoai:'B', giohang:{soLuong: 8, trongLuong: 7}},
+//     {ten: 'tung', phanLoai:'C', giohang:{soLuong: 10, trongLuong: 8}},
+//     {ten: 'hai', phanLoai:'A', giohang:{soLuong: 8, trongLuong: 20}},
+//     {ten: 'vinh', phanLoai:'A', giohang:{soLuong: 7, trongLuong: 9}},
+//     {ten: 'nam', phanLoai:'C', giohang:{soLuong: 5, trongLuong: 8}},
+//     {ten: 'khanh', phanLoai:'B', giohang:{soLuong: 5, trongLuong: 10}},
+// ]
+
+// var phanLoai = [
+//     {Loai: 'A', heSo: 2, dinhMuc:24, soLuong:10},
+//     {Loai: 'B', heSo: 3, dinhMuc:22, soLuong:7},
+//     {Loai: 'C', heSo: 1, dinhMuc:10, soLuong:9},
+// ]
+
+// // Hãy tính liệu người mua hàng có đạt đủ điều kiện nhận ưu đãi hay không! 
+// //Điều kiện nhận ưu đãi: Số định mức mỗi người nhỏ hơn định mức của sản phẩm
+// // Công thức tính dinhMuc = trongLuong*heSo
+// var dieuKien = 1
+// var ten = ""
+
+// // khanhHang.forEach((value)=>{
+// //         let loai = ""
+// //         let trongLuong = ""
+// //         if(ten === value.ten){
+// //                 loai = value.phanLoai
+// //                 trongLuong = value.giohang.trongLuong
+// //         }
+// //         phanLoai.forEach((value2)=>{
+// //                 if(loai === value2.Loai){
+// //                         dieuKien = trongLuong*value2.heSo
+// //                         console.log(dieuKien) 
+// //                 }
+// //         })
+// // })
+// var result = khanhHang.map((customer)=>{
+//         let dinhMuc = 0
+//         phanLoai.forEach((product)=>{
+//                 if(customer.phanLoai === product.Loai){
+//                         dinhMuc = customer.giohang.trongLuong*product.heSo
+//                 }
+//         })
+//         customer.dinhMuc = dinhMuc
+//         return customer
+// })
+// phanLoai.forEach((value)=>{
+//         let duDieuKien = khanhHang.filter((value2)=>{
+//                 if(value.Loai === value2.phanLoai){
+//                         if(value.dinhMuc > value2.dinhMuc){
+//                                 return true
+//                         }
+//                 }
+                
+//         })
+//         console.log(duDieuKien)
+//         })
