@@ -1,3 +1,5 @@
+///////////PHẦN 1
+
 //Bài 1: var x = 10;// Yêu cầu: Phân tích từng vị trí của x, tính a, b, c, x
  //a)var a = 8 + x++ + ++x - --x + x++ + 7 
 //       a = 8 + 10 + 12 - 11 + 11 + 7 = 37 ; x = 12;
@@ -82,7 +84,7 @@
 //  }
 
 // // Bài 5: 
-           var array5 = [3,2,4,1,8,7,1,10,1,2]
+           //var array5 = [3,2,4,1,8,7,1,10,1,2]
 // // Sắp xếp các phần tử theo thứ tự tăng dần và giảm dần
 // // Tìm số lớn nhất trong array5
 // // Tìm số nhỏ nhất trong array5
@@ -167,3 +169,106 @@
 //  }
  
 
+// ////////// PHẦN 2
+//bài 1 
+// var array1 = [3,2,1,6,'a']
+// var array2 = [9, 5, 0,'h',3, 5, 4,'c']
+
+// a, hãy tạo ra array3 mới chứa gồm 2 phần tử đầu của array1 và 3 phần tử cuối của array2
+
+// var array3 = array1.slice(0,2).concat(array2.slice(array2.length-3,array2.length))
+//  console.log(array3);
+
+// hãy tạo ra array4 chứa các số chẵn của array1 và array2
+
+
+
+// var arr1 = array1.filter(function(value) {
+//     return value %2 === 0
+// })
+// var arr2 = array2.filter(function (value) {
+//     return value%2===0
+// })
+
+// var array4 = arr1.concat(arr2)
+// console.log(array4);
+
+// số lớn nhất có thể tạo ra từ các chữ số trong array là bao nhiêu? Mỗi phần chỉ xuất hiện 1 lần
+
+// var arr1 = array1.filter(function(value) {
+//     return typeof value === "number"
+// })
+// var arr2 = array2.filter(function (value) {
+//     return typeof value === "number"
+// })
+
+// var array4 = arr1.concat(arr2)
+
+// var newarray4 = array4.sort(function (a,b) {
+//     return b-a
+// })
+// var result = newarray4.filter(function (value,index) {
+//     return newarray4.indexOf(value) === index
+// })
+// var maxnum = result.join("")
+// console.log(maxnum);
+// sắp xếp phần tử array tăng dần theo thứ tự bảng chữ cái
+// var arr1 = array1.filter(function(value) {
+//     return typeof value === "string"
+// })
+// var arr2 = array2.filter(function (value) {
+//     return typeof value === "string"
+// })
+// var array4 = arr1.concat(arr2)
+
+// var result = array4.sort()
+// console.log(result);
+
+
+// bài 2
+
+// var array = ['nguyen thanh tung', 'nguyen van nam', 'vu thanh trung', 'hoang tu linh']
+
+// var result = array.filter(function (value) {
+//     return value.includes('nguyen')
+// })
+// console.log(result);
+
+// bài 3 
+//var array = [1,3,5,1,2,5,1,5,1,6,2,9,1]
+//tính tổng các phần tử trong array
+// var sum = 0
+// var total = array.map(function (value) {
+//     sum += value
+//     return sum 
+// })
+// console.log(sum);
+
+// tính tích các phần tủ trong array
+// var tich = 1
+// var total = array.map(function (value) {
+//     tich *= value
+//     return tich 
+// })
+// console.log(tich);
+
+// số 5 xuất hiện ở những vị tríd nào
+
+// var array5 = array.map(function (item,index) {
+//     if (item === 5) {
+//         return index
+//     }else{
+        
+//     }
+// })
+// console.log(array5);
+
+// tạo ra array mới gồm các số ko trùng nhau
+
+// var abc = array.filter(function (value,index) {
+//     return array.indexOf(value) === index
+// })
+// console.log(abc);
+
+// var alo = array.map((item,index)=>item === 5 ? index :null).filter(i=>i)
+// console.log(alo);
