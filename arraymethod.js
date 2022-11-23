@@ -384,18 +384,18 @@ let  persons =
 // dùng .map để tạo mảng mới, viết hoa toàn bộ Tên học viện : (Trung => TRUNG) 
 // 	gợi ý : dùng toUppercase để viết hoa
 
-//     let newArr = persons.map((value)=>{
-//         let newName = ''
-//         newName = value.name.split(" ")
-//         value.name = newName
-//         let ten = value.name.map((value2)=>{
-//                 value2 = value2[0].toUpperCase() + value2.slice(1, value2.length)
-//                 return value2
-//         })
-//         value.name = ten.join("")
-//         return value
-//     })
-//     console.log(newArr)
+    let newArr = persons.map((value)=>{
+        let newName = ''
+        newName = value.name.split(" ")
+        value.name = newName
+        let ten = value.name.map((value2)=>{
+                value2 = value2[0].toUpperCase() + value2.slice(1, value2.length)
+                        return value2
+        })
+        value.name = ten.join("")
+        return value
+    })
+    console.log(newArr)      
 
 
 
