@@ -1,0 +1,4 @@
+DOM JS:
+event.target : đối tượng mà con trỏ chuột đang chạm vào
+event.currentTarget : 
+
