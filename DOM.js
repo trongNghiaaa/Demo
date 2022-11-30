@@ -50,13 +50,14 @@
 // Bài 3: Bài 3: Giao diện có 2 nút nhấn và hình vuông,
 //nhấn nút 1 hình vuông to lên gấp đôi, nhấn nút 2, hình vuông nhỏ
 //gấp đôi
-var gapdoi = document.querySelector('.btn1');
-var chiadoi = document.querySelector('.btn2');
-var result = document.querySelector('.box');
+// var gapdoi = document.querySelector('.btn1');
+// var chiadoi = document.querySelector('.btn2');
+// var result = document.querySelector('.box');
 
-gapdoi.addEventListener('click', () => {
-    result.setAttribute('style', 'width : 200px, height:200px,background: #red');
-});
+// gapdoi.addEventListener('click', () => {
+//     result.style.width = '100px';
+//     result.style.height = '100px';
+// });
 // Bài 4:Giao diện gồm một nút nhấn và 2 ô input,
 //tính chỉ số BMI của mỗi người dựa vào chiều cao và cân nặng.
 // Biết công thức: bmi = cân nặng / ( chiều cao ^ 2 )
@@ -69,5 +70,3 @@ gapdoi.addEventListener('click', () => {
 // 30 ≤ BMI < 35: Béo phì độ 1
 // 35 ≤ BMI < 40: Béo phì độ II
 // BMI > 40: Béo phì độ III
-
-
